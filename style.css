@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital@0;1&family=Poppins:wght@300;500&display=swap');
+
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9F9F9F;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+   background-color: #FFFFFF;
+   width: 870px;
+   padding: 30px;
+}
+.player-title{
+  color: #562EFF;
+  font-size: 24px;
+  margin-top: 3px;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+   margin-left: 16px;
+   font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 44px;
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:26px;
+    grid-column-gap: 80px;
+}
+.top-title{
+    color: #562EFF;
+  font-size: 24px;
+  margin-top: 3px;
+}
+article{
+    display: flex;
+    align-items: center;
+}
+.top-blog img{
+    width:177px;
+    height: 127px;
+
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+.top-blog p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 16px;
+    
+}
+.bloger{
+    color: #562EFF;
+}
+.by{
+    color: #9F9F9F;
+}
+@media screen  and (max-width:688px){
+    .container{
+       
+        width:100%;
+        
+     }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+       flex-direction: column;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    article{
+       flex-direction: column;
+    }
+}
